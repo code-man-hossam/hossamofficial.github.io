@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#nav-bar{
+    top: 0;
+    position: sticky;
+    padding: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding: 0;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600px !important;
+}
+
+.fa-bars{
+    color: #fff !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 20px !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+    transition: 0 !important;
+}
+.fa-bars:hover{
+    transform: translateY(0) !important;
+}
+.navbar h3{
+    color: #fff;
+    margin-left: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+#banner{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
+.text1 h3{
+    color:  #ff0 !important;
+    
+    font-size: 35px !important;
+}
+
+.text1 p{
+    color:  #fff !important;
+    font-size: 20px !important;
+}
+
+.firstImg{
+    width: 90px !important;
+    margin-top: 100px !important;
+}
+
+.btn{
+    width: 190px;
+    height: 50px;
+    background:transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 30px 20px;
+}
+
+.btn img{
+    width: 30px;
+    margin-right: 20px;
+}
+
+.img-fluid{
+    margin-top: 50px !important;
+}
+
+.title{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+    color: #5f1782;
+}
+
+.title::before{
+    content: '';
+    width: 200px;
+    height: 7px;
+    background: #5f1782;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(113px) ;
+}
+
+.title::after{
+    content: '';
+    width: 50px;
+    height: 15px;
+    background: #5f1782;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(14px) ;
+}
+
+.ag{
+    width: 300px;
+}
+.ag1{
+    width: 230px;
+}
+.tx{
+    color: #000 !important;
+}
+.text-center{
+    margin-top: 100px !important;
+}
+
+.btn1{
+    padding: 10px 10px;
+    border: 1px solid #5f1782;
+    background: #5f1782;
+    color: #fff;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    outline: none !important;
+    font-weight: bold;
+}
+
+.list p{
+    font-size: 40px;
+    color: #5f1782;
+    margin: 40px 5px 30px 0;
+}
+
+.list ul{
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: 40px;
+}
+
+.list ul li{
+    margin-bottom: 15px;
+}
+
+.aboutImg{
+    width: 1700px !important;
+}
+
+#testimonials{
+    margin: 100px 0;
+}
+
+.testimonials{
+    margin: 50px 0;
+    border-left: 5px solid #5f1782;
+}
+
+.testimonials img{
+    width: 120px;
+    margin-left: 10px;
+    border-radius: 50%;
+    display: inline;
+}
+
+.test{
+    display: inline;
+    margin-left: 20px;
+}
+
+#social{
+    margin-top: 100px;
+    margin-bottom:50px ;
+}
+
+#social p{
+    font-size: 46px;
+    margin-bottom: 40px;
+    color: #5f1782;
+}
+
+.fa{
+    color: #00f;
+    font-size: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.fa:hover{
+    transform: translateY(-10px);
+}
+
+#footer{
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    padding: 70px 0;
+}
+
+.foot h3{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.foot p{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.fa-map-marker, .fa-phone, .fa-envelope-o{
+    color: #fff;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+    font-size: 20px;
+    padding: 10px 20px;
+    display: inline;
+    
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.text{
+    display: inline;
+    margin-right: 90px!important;
+    font-size: 14px !important;
+    
+    letter-spacing: 0 !important;
+}
+
+.last h5{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.button{
+    width: 200px;
+    padding: 10px 20px;
+    color: #00f;
+    background: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    font-weight: 600;
+    margin: 50px 100px;
+}
+
+hr{
+    background-color: #fff;
+    
+}
+
+.text-center{
+    margin-bottom: 0 !important;
+    color: #fff !important;
+    margin-top: 0 !important;
+    font-size: 20px !important;
+
+}

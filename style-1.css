@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', serif;
+}
+
+/*------body-------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #000033;
+    color: #1d65a6;
+    overflow-x: hidden;
+}
+
+
+/*-----Top nav------*/
+
+.nav{
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between; 
+    z-index: 99;
+}
+.nav .logo{
+    margin-top: 20px;
+    margin-left: 5%;
+    flex-basis: 40%;
+}
+.nav .logo img{
+    width: 40px;
+    display: inline-block;
+}
+
+.nav .logo p{
+    display: inline;
+    font-size: 13px;
+}
+
+.logo .text1::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background:#1d65a6;
+}
+
+.logo .text1::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #1d65a6;
+}
+
+.container-fluid h3{
+    position: absolute;
+    top: 150px;
+    transform: rotate(270deg);
+    color:  #1d65a6;
+    -webkit-text-stroke: 1px #fff;
+    left: -120px;
+    font-size: 20px;
+    z-index: -1;
+}
+
+
+.nav .nav-links{
+    margin-right: 5%;
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .nav-links .box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav .nav-links .box1 a{
+    color: #1d65a6;
+    text-decoration: none;
+}
+
+.nav .nav-links .box1 a:hover{
+    color: #0fff0f;
+}
+
+
+@media only screen and (max-width:600px){
+    .nav{
+        width: 100%;
+        height: 30px;
+    }
+
+    .nav .logo img{
+        width: 30px;
+        display: inline-block;
+    }
+
+    .logo .text1::before{
+        content: '';
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        background:#1d65a6;
+        display: none;
+    }
+
+    .logo .text1::after{
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background: #1d65a6;
+    }
+
+    .nav .logo p{
+        display: inline;
+        font-size: 14px;
+    }
+
+    .nav .nav-links .box1 a{
+        color: #1d65a6;
+        text-decoration: none;
+        
+    }
+
+    .nav .nav-links{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .container-fluid h3{
+        position: absolute;
+        top: 200px;
+        transform: rotate(270deg);
+        color:  #1d65a6;
+        -webkit-text-stroke: 1px #fff;
+        left: -120px;
+        font-size: 20px;
+        z-index: -1;
+    }
+
+}
+
+/*----------Welcome------*/
+
+.welcome{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+}
+
+.welcome p:nth-child(1){
+    line-height: 25px;
+}
+
+.welcome p:nth-child(1) {
+    animation: type 3s steps(31);
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 31ch;
+    animation-delay: 1s;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+
+    100%{
+        width: 31ch;
+       
+    }
+}
+
+.welcome p:nth-child(2){
+    line-height: 25px;
+}
+
+
+
+
+.welcome a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.welcome a:hover{
+    color: #1d65a6;
+}
+
+
+@media only screen and (max-width: 600px){
+    .welcome{
+        position: absolute;
+        width: 200px;
+        top: 130px;
+        left: 30%;
+    }
+}
+
+.text-box{
+    position: absolute;
+    top: 25%;
+    left: 28%;
+    font-size: 70px;
+}
+
+.text-box span{
+    display: inline-block;
+    font-weight: bolder;
+    animation: move 6s linear infinite;
+    color: #000033;
+}
+
+@keyframes move{
+    0%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px rgba(255,255,255,0.1);
+        transform: translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px rgba(0,0,0,0);
+    }
+}
+
+.text-box span:nth-child(1){
+    animation-delay: 0.5s;
+}
+.text-box span:nth-child(2){
+    animation-delay: 1s;
+}
+.text-box span:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+@media only screen and (max-width:600px){
+    .text-box{
+        position: absolute;
+        top: 53%;
+        left: 28%;
+        font-size: 30px;
+    }
+    .text-box span{
+        display: inline-block;
+        font-weight: bolder;
+        animation: move 6s linear infinite;
+        color: #000033;
+    }
+    
+    @keyframes move{
+        0%{
+            text-shadow: 0 0 30px rgba(0,0,0,0);
+        }
+        50%{
+            text-shadow: 0 0 30px rgba(255,255,255,0.2);
+            transform: translateY(30px);
+        }
+        100%{
+            text-shadow: 0 0 30px rgba(0,0,0,0);
+        }
+    }
+}
+
+/*------------ banner section------------*/
+
+.banner{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background: transparent;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner div h1{
+    font-size: 90px;
+    text-align: center;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    cursor: pointer;
+}
+
+.banner div h1 span{
+    color: #fff;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .banner{
+        position: absolute;
+        width: 100%;
+        height: 22%;
+        background: transparent;
+        text-align: center;
+        top: 93%;
+        left: 50%;
+    }
+
+    .banner div h1{
+        font-size: 30px;
+       
+    }
+    .banner div h1::before{
+        width: 30px;
+        height: 3px;
+    }
+    
+    .banner div h1 span::after{
+        width: 30px;
+        height: 3px;
+        
+    }
+}
+/*---------banner images--------*/
+
+
+.banner-img1{
+    width: 30%;
+    top: 70% ;
+    left: 10%;
+    position: absolute;
+    z-index: -2;
+}
+
+.banner-img1 img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-img2{
+    width: 30%;
+    top: 40% ;
+    left: 65%;
+    position: absolute;
+    z-index: -2;
+}
+
+.banner-img2 img{
+    width: 100%;
+    position: relative;
+}
+
+.banner-img2 .scroll{
+    position: absolute;
+    left: -10%;
+    top: -7%;
+    width: 90px;
+    animation: scroll 3s linear infinite;
+}
+@media only screen and (max-width: 600px){
+    .banner-img1{
+        width: 30%;
+        top: 98% ;
+        left: 15%;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .banner-img2{
+        width: 30%;
+        top: 75% ;
+        left: 65%;
+        position: absolute;
+        z-index: -2;
+    }
+
+    .banner-img2 .scroll{
+        width: 40px;
+    }
+
+}
+
+@keyframes scroll{
+    0%{
+        transform: rotate(0);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/*---------Projects section---------*/
+
+
+.projects{
+    width: 100%;
+    position: absolute;
+    top: 170%;
+}
+
+.projects h1{
+    font-size: 90px;
+    font-family: 'Righteous', cursive;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    transition: 1s;
+}
+
+.projects h1:hover{
+    color: #fff;
+}
+
+
+.projects h1 span{
+    color: #fff;
+}
+
+.projects h1 span:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.projects .rowbox1 p{
+    width: 200px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.projects .rowbox1 p a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+
+
+
+.projects .fa{
+    margin-left: 10px;
+    color: #1d65a6;
+}
+
+@media only screen and (max-width:600px){
+    .projects h1{
+        font-size: 40px;
+        font-family: 'Righteous', cursive;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        margin-bottom: 30px;
+        cursor: pointer;
+        border-bottom: 1px solid #fff;
+        transition: 1s;
+    }
+}
+
+.projects .img-fluid{
+    margin-top: 90px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    transition: 1s ;
+    z-index: -5;
+}
+
+.projects .img-fluid:hover{
+    transform: translateX(10px);
+}
+
+.projects .rowbox2 .fa{
+    color: #1d65a6;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.projects .rowbox2 p{
+    color: #1d65a6;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    border-bottom: 1px solid #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.projects .rowbox2 p::after{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #1d65a6;
+}
+
+/*---------box 3 ---------------*/
+
+.projects .rowbox3{
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.projects .rowbox3 .img-fluid{
+    position: absolute;
+    right: 30%;
+    top: 0;
+}
+
+.projects .rowbox3 p{
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+.projects .rowbox3 p span{
+    color: #fff;
+}
+
+.projects .rowbox3 .fa{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+
+.projects .rowbox3 .footer{
+    margin-top: 100px;
+    border-top: 1px solid #fff;
+}
+
+.projects .rowbox3 .footer p{
+    margin-top: 40px;
+}
+
+.rowbox3 .social-icons{
+    margin-top: 50px;
+    left: 0;
+}
+
+.rowbox3 .social-icons ul li{
+    list-style: none;
+    display: inline-block;
+    color: #1d65a6;
+    font-size: 15px;
+}
+
+.rowbox3 .social-icons ul li a .fa{
+    list-style: none;
+    color: #1d65a6;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.rowbox3 .social-icons ul li a .fa:hover{
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+
+@media only screen and (max-width:600px){
+    .projects .rowbox3 h1{
+        font-size: 30px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    
+    .projects .rowbox3 .img-fluid{
+        position: absolute;
+        display: inline-block;
+        width: 150px;
+        left: 20%;
+        top: -50%;
+    }
+    
+    .projects .rowbox3 p{
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 13px;
+        margin-left: 20px;
+    }
+
+    .projects .rowbox3 .footer p{
+        margin-top: 5px;
+    }
+    
+    .rowbox3 .social-icons{
+        margin-top: 10px;
+        left: 0;
+    }
+}
+
+
